@@ -83,7 +83,7 @@ def admin_only(f):
 
 # Routes
 @app.route('/')
-def get_all_posts():
+def home():
     posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts)
 
