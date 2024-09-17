@@ -12,8 +12,8 @@ from flask_ckeditor import CKEditor
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('FLASK_SECRET_KEY', 'dev_key')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///blog.db')
+app.config['SECRET_KEY'] = os.environ.get('FLASK_KEY', 'dev_key')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DB_URI', 'sqlite:///blog.db')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
