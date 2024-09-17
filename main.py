@@ -197,6 +197,5 @@ def delete_post(post_id):
 
 
 if __name__ == "__main__":
-    # Render에서 제공한 PORT 환경 변수를 사용하고, 없을 경우 기본값으로 10000번 포트 사용
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port, debug=False)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)), debug=False)
+
