@@ -87,6 +87,10 @@ def home():
     posts = BlogPost.query.all()
     return render_template("index.html", all_posts=posts)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 
 @app.route('/register', methods=["GET", "POST"])
 def register():
