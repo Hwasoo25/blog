@@ -8,4 +8,4 @@ WTForms==3.0.1
 Flask-WTF==1.1.1
 psycopg2-binary==2.9.6
 gunicorn==21.2.0
-werkzeug==2.0.3
+werkzeug==2.3.3
