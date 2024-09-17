@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Virtual environment folder
+venv/
+.venv/
+
+# Database files
+*.db
+
+# PyCharm
+.idea/
+
+instance/
