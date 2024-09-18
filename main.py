@@ -170,6 +170,10 @@ def add_new_post():
         return redirect(url_for("get_all_posts"))
     return render_template("make-post.html", form=form)
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')  # contact.html은 따로 만들어 주세요.
+
 
 @app.route("/edit-post/<int:post_id>", methods=["GET", "POST"])
 @admin_only
